@@ -1,0 +1,9 @@
+(module
+  (import "env" "console_log" (func $console_log (param i32)))
+
+  (func $add (param $a i32) (param $b i32) (result i32)
+    (i32.add (local.get $a) (local.get $b))
+  )
+
+  (export "add" (func $add))
+)
